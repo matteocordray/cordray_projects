@@ -1,5 +1,5 @@
 # Matteo's Embedded Systems Projects
-This repository serves to showcase embedded systems projects I've worked on and am interested in.
+This repository serves to showcase my top embedded systems projects I've worked on in the past four years.
 
 For the structure of this repo, the `projects` folder serves to host the projects themselves, while the `docs` folder serves to host the documentation for the projects.
 
