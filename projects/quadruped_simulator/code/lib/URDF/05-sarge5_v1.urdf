@@ -19,7 +19,7 @@
         <visual>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <geometry>
-                <mesh filename="STL/sarge5_body_v2.stl" scale="0.001 0.001 0.001">
+                <mesh filename="../lib/STL/sarge5_body_v2.stl" scale="0.001 0.001 0.001">
                 </mesh>
             </geometry>
             <material name="black">
@@ -28,7 +28,7 @@
         </visual>
         <collision>
             <geometry>
-                <mesh filename="STL/sarge5_body_v2.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="../lib/STL/sarge5_body_v2.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
         <inertial>
@@ -45,13 +45,13 @@
         <visual>
             <origin rpy="1.57075 -0.78539816339 0" xyz="0 0 0"/>
             <geometry>
-                <mesh filename="STL/sarge5_hip.stl" scale="0.01 0.01 0.01"/>
+                <mesh filename="../lib/STL/sarge5_hip.stl" scale="0.01 0.01 0.01"/>
             </geometry>
             <material name="blue"/>
         </visual>
         <collision>
             <geometry>
-                <mesh filename="STL/sarge5_hip.stl" scale="0.01 0.01 0.01"/>
+                <mesh filename="../lib/STL/sarge5_hip.stl" scale="0.01 0.01 0.01"/>
             </geometry>
         </collision>
         <inertial>
@@ -64,13 +64,13 @@
         <visual>
             <origin rpy="1.57075 -2.35619449 0" xyz="0 0 0"/>
             <geometry>
-                <mesh filename="STL/sarge5_hip.stl" scale="0.01 0.01 0.01"/>
+                <mesh filename="../lib/STL/sarge5_hip.stl" scale="0.01 0.01 0.01"/>
             </geometry>
             <material name="blue"/>
         </visual>
         <collision>
             <geometry>
-                <mesh filename="STL/sarge5_hip.stl" scale="0.01 0.01 0.01"/>
+                <mesh filename="../lib/STL/sarge5_hip.stl" scale="0.01 0.01 0.01"/>
             </geometry>
         </collision>
         <inertial>
@@ -83,13 +83,13 @@
         <visual>
             <origin rpy="1.57075 0.78539816 0" xyz="0 0 0"/>
             <geometry>
-                <mesh filename="STL/sarge5_hip.stl" scale="0.01 0.01 0.01"/>
+                <mesh filename="../lib/STL/sarge5_hip.stl" scale="0.01 0.01 0.01"/>
             </geometry>
             <material name="blue"/>
         </visual>
         <collision>
             <geometry>
-                <mesh filename="STL/sarge5_hip.stl" scale="0.01 0.01 0.01"/>
+                <mesh filename="../lib/STL/sarge5_hip.stl" scale="0.01 0.01 0.01"/>
             </geometry>
         </collision>
         <inertial>
@@ -102,13 +102,13 @@
         <visual>
             <origin rpy="1.57075 2.35619449 0" xyz="0 0 0"/>
             <geometry>
-                <mesh filename="STL/sarge5_hip.stl" scale="0.01 0.01 0.01"/>
+                <mesh filename="../lib/STL/sarge5_hip.stl" scale="0.01 0.01 0.01"/>
             </geometry>
             <material name="blue"/>
         </visual>
         <collision>
             <geometry>
-                <mesh filename="STL/sarge5_hip.stl" scale="0.01 0.01 0.01"/>
+                <mesh filename="../lib/STL/sarge5_hip.stl" scale="0.01 0.01 0.01"/>
             </geometry>
         </collision>
         <inertial>
@@ -150,13 +150,13 @@
         <visual>
             <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
             <geometry>
-                <mesh filename="STL/sarge5_knee.stl" scale="0.01 0.01 0.01"/>
+                <mesh filename="../lib/STL/sarge5_knee.stl" scale="0.01 0.01 0.01"/>
             </geometry>
             <material name="grey"/>
         </visual>
         <collision>
             <geometry>
-                <mesh filename="STL/sarge5_knee.stl" scale="0.01 0.01 0.01"/>
+                <mesh filename="../lib/STL/sarge5_knee.stl" scale="0.01 0.01 0.01"/>
             </geometry>
         </collision>
         <inertial>
@@ -168,13 +168,13 @@
         <visual>
             <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
             <geometry>
-                <mesh filename="STL/sarge5_knee.stl" scale="0.01 0.01 0.01"/>
+                <mesh filename="../lib/STL/sarge5_knee.stl" scale="0.01 0.01 0.01"/>
             </geometry>
             <material name="grey"/>
         </visual>
         <collision>
             <geometry>
-                <mesh filename="STL/sarge5_knee.stl" scale="0.01 0.01 0.01"/>
+                <mesh filename="../lib/STL/sarge5_knee.stl" scale="0.01 0.01 0.01"/>
             </geometry>
         </collision>
         <inertial>
@@ -186,13 +186,13 @@
         <visual>
             <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
             <geometry>
-                <mesh filename="STL/sarge5_knee.stl" scale="0.01 0.01 0.01"/>
+                <mesh filename="../lib/STL/sarge5_knee.stl" scale="0.01 0.01 0.01"/>
             </geometry>
             <material name="grey"/>
         </visual>
         <collision>
             <geometry>
-                <mesh filename="STL/sarge5_knee.stl" scale="0.01 0.01 0.01"/>
+                <mesh filename="../lib/STL/sarge5_knee.stl" scale="0.01 0.01 0.01"/>
             </geometry>
         </collision>
         <inertial>
@@ -204,13 +204,13 @@
         <visual>
             <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
             <geometry>
-                <mesh filename="STL/sarge5_knee.stl" scale="0.01 0.01 0.01"/>
+                <mesh filename="../lib/STL/sarge5_knee.stl" scale="0.01 0.01 0.01"/>
             </geometry>
             <material name="grey"/>
         </visual>
         <collision>
             <geometry>
-                <mesh filename="STL/sarge5_knee.stl" scale="0.01 0.01 0.01"/>
+                <mesh filename="../lib/STL/sarge5_knee.stl" scale="0.01 0.01 0.01"/>
             </geometry>
         </collision>
         <inertial>
@@ -253,12 +253,12 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="STL/sarge5_foot.stl" scale="0.01 0.01 0.01"/>
+                <mesh filename="../lib/STL/sarge5_foot.stl" scale="0.01 0.01 0.01"/>
             </geometry>
         </visual>
         <collision>
             <geometry>
-                <mesh filename="STL/sarge5_foot.stl" scale="0.01 0.01 0.01"/>
+                <mesh filename="../lib/STL/sarge5_foot.stl" scale="0.01 0.01 0.01"/>
             </geometry>
         </collision>
         <inertial>
@@ -270,12 +270,12 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="STL/sarge5_foot.stl" scale="0.01 0.01 0.01"/>
+                <mesh filename="../lib/STL/sarge5_foot.stl" scale="0.01 0.01 0.01"/>
             </geometry>
         </visual>
         <collision>
             <geometry>
-                <mesh filename="STL/sarge5_foot.stl" scale="0.01 0.01 0.01"/>
+                <mesh filename="../lib/STL/sarge5_foot.stl" scale="0.01 0.01 0.01"/>
             </geometry>
         </collision>
         <inertial>
@@ -287,12 +287,12 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="STL/sarge5_foot.stl" scale="0.01 0.01 0.01"/>
+                <mesh filename="../lib/STL/sarge5_foot.stl" scale="0.01 0.01 0.01"/>
             </geometry>
         </visual>
         <collision>
             <geometry>
-                <mesh filename="STL/sarge5_foot.stl" scale="0.01 0.01 0.01"/>
+                <mesh filename="../lib/STL/sarge5_foot.stl" scale="0.01 0.01 0.01"/>
             </geometry>
         </collision>
         <inertial>
@@ -304,12 +304,12 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="STL/sarge5_foot.stl" scale="0.01 0.01 0.01"/>
+                <mesh filename="../lib/STL/sarge5_foot.stl" scale="0.01 0.01 0.01"/>
             </geometry>
         </visual>
         <collision>
             <geometry>
-                <mesh filename="STL/sarge5_foot.stl" scale="0.01 0.01 0.01"/>
+                <mesh filename="../lib/STL/sarge5_foot.stl" scale="0.01 0.01 0.01"/>
             </geometry>
         </collision>
         <inertial>

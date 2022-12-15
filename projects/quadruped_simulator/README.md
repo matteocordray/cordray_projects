@@ -58,3 +58,5 @@ python main.py
 Other files in the `src` folder are used for testing and debugging. You can run them by changing the name of the file in the `main.py` file.
 
 When you run the main.py folder, the robot will start automatically walking
+
+***NOTE: SOME FILE PATHS MAY BE BROKEN WHEN REORGANIZING FOLDER STRUCTURE FOR THIS REPOSITORY***

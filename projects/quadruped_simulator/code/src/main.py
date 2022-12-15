@@ -48,7 +48,7 @@ cyaw=90
 cpitch=-10# -20
 cdist=5
 
-sarge5_Id = p.loadURDF("/../lib/URDF/05-sarge5_v1.urdf",cubeStartPos, cubeStartOrientation)
+sarge5_Id = p.loadURDF("URDF/05-sarge5_v1.urdf",cubeStartPos, cubeStartOrientation)
 maxForce = 50
 
 step = 0
