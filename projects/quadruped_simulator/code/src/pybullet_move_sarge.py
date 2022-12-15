@@ -12,7 +12,7 @@ p.resetDebugVisualizerCamera(cameraDistance=10, cameraYaw = 45, cameraPitch = -4
 cubeStartOrientation = p.getQuaternionFromEuler([1.57075,0,0])
 cubeStartPos = [0,0,2]
 
-sarge5_Id = p.loadURDF("lib/URDF/05-sarge5_v1.urdf",cubeStartPos, cubeStartOrientation)
+sarge5_Id = p.loadURDF("/../lib/URDF/05-sarge5_v1.urdf",cubeStartPos, cubeStartOrientation)
 sarge5EndEffectorIndex = 3
 # numJoints = p.getNumJoints(sarge5_Id)
 numJoints = 4
