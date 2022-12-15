@@ -2,3 +2,6 @@
 
 This folder contains the code for the ESP32 microcontroller as part of the Sprinter Van Project. This code has subfolders where I published different versions of the same code.
 
+- [`v3.0`](v_3_0) is the latest version of the code. It is the one that is currently running on the ESP32 microcontroller. Currently, code changes from the previous version were tracked in the file itself, and not from VSCode. This was initially intended for simplicity, but I will start tracking changes from VSCode in the future.
+- `v2.0` is the previous version of the code. It is the one that was running on the ESP32 microcontroller before switching the entire bluetooth stack to classic so that the device can work with the Android Head Unit I ordered. This version is not being used anymore, but I am keeping it here for reference. The biggest change between this and version `3.0` was switching the Bluetooth mode, which forced me to change libraries as well. Other additions were made as I kept adding features I felt were needed for the project to feel as close as possible to a real van.
+- `v1.0` is the oldest and original version of the code. However, that code did not make it past saving since it was initially built without any version control... It's being noted on the README so that I am aware, but it will not be used for future development.
