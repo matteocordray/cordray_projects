@@ -1,5 +1,9 @@
 # Quadruped Simulator Project
-
+```txt
+Name: Quadruped Simulator
+Version: 0.0.1
+Description: Simulates a quadruped robot in Python
+```
 ## Folder Structure
 
 This project was intended to help simulate a four-legged robot in Python. The project uses pybullet, a physics engine, to simulate the robot. I simulated the walking gait that was implemented as well as the balancing. Here I will outline how the code works and what I did to fix any bugs that arised.
@@ -17,8 +21,6 @@ Here is the folder structure of the project:
         ├───tests # Folder containing test files where I changed some values and played with other functions in pybullet.
     ├───docs # Folder containing a document on getting started with pybullet
 ```
-
-Inside each folder, there will be a README.md file that will explain what is in the folder and how to use it.
 
 This project was fun to explore pybullet (despite weird documentation...) and to learn about the physics engine. Plus, seeing a robot you've already built in real life move around in a simulation is pretty cool.
 
