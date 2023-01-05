@@ -14,7 +14,7 @@ This is the main `.ino` for the Arduino project. The Arduino IDE was used for th
 
 Just like any Arduino project, the `setup()` and `loop()` functions are used to initialize the Arduino and run the main code. The `setup()` function is as followed:
 
-```cpp
+```ino
 Serial.begin(115200); // Init Serial
 attachInterrupt(digitalPinToInterrupt(BUTTON_PIN), onPress, RISING); // attach interrupt to start program with button press
 pixy_cannon.init(PIXY_CANNON_ADDR); // Initialize cannon Pixy cam
