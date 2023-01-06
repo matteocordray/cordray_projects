@@ -1,0 +1,7 @@
+
+
+
+
+
+module Slow_Clock(
+	input clk_in, // input clock which is 100 MHz from the De1-SOC board

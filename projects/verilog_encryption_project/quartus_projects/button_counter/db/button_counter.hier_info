@@ -1,0 +1,15 @@
+|button_counter
+pmod[0] => led[0]~reg0.ACLR
+pmod[0] => led[1]~reg0.ACLR
+pmod[0] => led[2]~reg0.ACLR
+pmod[0] => led[3]~reg0.ACLR
+pmod[1] => led[0]~reg0.CLK
+pmod[1] => led[1]~reg0.CLK
+pmod[1] => led[2]~reg0.CLK
+pmod[1] => led[3]~reg0.CLK
+led[0] << led[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led[1] << led[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led[2] << led[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led[3] << led[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

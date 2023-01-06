@@ -1,0 +1,6 @@
+
+State Machine - |fsm_moore|state
+Name state.STATE_IDLE state.STATE_DONE state.STATE_COUNTING 
+state.STATE_IDLE 0 0 0 
+state.STATE_COUNTING 1 0 1 
+state.STATE_DONE 1 1 0 

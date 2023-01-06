@@ -1,0 +1,9 @@
+
+
+
+module two_bit_counter(
+	input clk,
+	output reg [1:0] Q
+	);
+	reg [1:0] temp=0
+	always @(posedge clk) // when positive edge of the clock arrives, counter goes up by 1

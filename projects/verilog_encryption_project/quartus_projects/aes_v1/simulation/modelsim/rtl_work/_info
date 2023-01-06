@@ -1,0 +1,164 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/altera_lite/16.0/projects/aes_v1/simulation/modelsim
+vaes_core
+!s110 1665683887
+!i10b 1
+!s100 0=e@XAm07=l0g25T14DY[0
+IL;0?U72[kcQBMPM9iR]^o1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1665630389
+8C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_core.v
+FC:/altera_lite/16.0/projects/aes_v1/verilog files/aes_core.v
+Z2 L0 42
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1665683887.000000
+!s107 C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_core.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera_lite/16.0/projects/aes_v1/verilog files|C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_core.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work {+incdir+C:/altera_lite/16.0/projects/aes_v1/verilog files}
+Z6 tCvgOpt 0
+vaes_decipher_block
+Z7 !s110 1665683886
+!i10b 1
+!s100 cNmbka`miEU<bbDTG5UQ:1
+I9ZC>DAQkD01=IR7nbDKKh3
+R1
+R0
+w1665630571
+8C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_decipher_block.v
+FC:/altera_lite/16.0/projects/aes_v1/verilog files/aes_decipher_block.v
+Z8 L0 43
+R3
+r1
+!s85 0
+31
+Z9 !s108 1665683886.000000
+!s107 C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_decipher_block.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera_lite/16.0/projects/aes_v1/verilog files|C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_decipher_block.v|
+!i113 1
+R4
+R5
+R6
+vaes_encipher_block
+R7
+!i10b 1
+!s100 gKNLnPhMY^3ZaU1KUSFe42
+IK_Ijc;^XDGabX04K?Q^ZO1
+R1
+R0
+w1665630490
+8C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_encipher_block.v
+FC:/altera_lite/16.0/projects/aes_v1/verilog files/aes_encipher_block.v
+R8
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_encipher_block.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera_lite/16.0/projects/aes_v1/verilog files|C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_encipher_block.v|
+!i113 1
+R4
+R5
+R6
+vaes_inv_sbox
+R7
+!i10b 1
+!s100 hmcf`=z@Gh1^aNHHa0]]n0
+IdoS611oVjDl4RkJa<zTaH0
+R1
+R0
+w1665630623
+8C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_inv_sbox.v
+FC:/altera_lite/16.0/projects/aes_v1/verilog files/aes_inv_sbox.v
+L0 40
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_inv_sbox.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera_lite/16.0/projects/aes_v1/verilog files|C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_inv_sbox.v|
+!i113 1
+R4
+R5
+R6
+vaes_key_mem
+R7
+!i10b 1
+!s100 ALz>mnF0M3ef8aB46Z_<P2
+I42FiDCezf;Vc:8FEL6?nD3
+R1
+R0
+w1665630665
+8C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_key_mem.v
+FC:/altera_lite/16.0/projects/aes_v1/verilog files/aes_key_mem.v
+Z10 L0 41
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_key_mem.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera_lite/16.0/projects/aes_v1/verilog files|C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_key_mem.v|
+!i113 1
+R4
+R5
+R6
+vaes_sbox
+R7
+!i10b 1
+!s100 =;]7SP_bnR`gW4gDRdQPU2
+I=XPIM`QQU7d;gbFnO359n0
+R1
+R0
+w1665630697
+8C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_sbox.v
+FC:/altera_lite/16.0/projects/aes_v1/verilog files/aes_sbox.v
+R2
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_sbox.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera_lite/16.0/projects/aes_v1/verilog files|C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_sbox.v|
+!i113 1
+R4
+R5
+R6
+vaes_v1
+R7
+!i10b 1
+!s100 Aoko0nR?kzbS=MdeFl2F:0
+IH?AThLl?T4:]R0>0J>ol91
+R1
+R0
+w1665632713
+8C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_v1.v
+FC:/altera_lite/16.0/projects/aes_v1/verilog files/aes_v1.v
+R10
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_v1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera_lite/16.0/projects/aes_v1/verilog files|C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_v1.v|
+!i113 1
+R4
+R5
+R6

@@ -1,0 +1,83 @@
+# Reading C:/intelFPGA/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do aes_v1_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/altera_lite/16.0/projects/aes_v1/verilog\ files {C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_v1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:58:06 on Oct 13,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/altera_lite/16.0/projects/aes_v1/verilog files" C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_v1.v 
+# -- Compiling module aes_v1
+# 
+# Top level modules:
+# 	aes_v1
+# End time: 13:58:06 on Oct 13,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/altera_lite/16.0/projects/aes_v1/verilog\ files {C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_sbox.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:58:06 on Oct 13,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/altera_lite/16.0/projects/aes_v1/verilog files" C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_sbox.v 
+# -- Compiling module aes_sbox
+# 
+# Top level modules:
+# 	aes_sbox
+# End time: 13:58:06 on Oct 13,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/altera_lite/16.0/projects/aes_v1/verilog\ files {C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_key_mem.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:58:06 on Oct 13,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/altera_lite/16.0/projects/aes_v1/verilog files" C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_key_mem.v 
+# -- Compiling module aes_key_mem
+# 
+# Top level modules:
+# 	aes_key_mem
+# End time: 13:58:06 on Oct 13,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/altera_lite/16.0/projects/aes_v1/verilog\ files {C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_inv_sbox.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:58:06 on Oct 13,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/altera_lite/16.0/projects/aes_v1/verilog files" C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_inv_sbox.v 
+# -- Compiling module aes_inv_sbox
+# 
+# Top level modules:
+# 	aes_inv_sbox
+# End time: 13:58:06 on Oct 13,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/altera_lite/16.0/projects/aes_v1/verilog\ files {C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_encipher_block.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:58:06 on Oct 13,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/altera_lite/16.0/projects/aes_v1/verilog files" C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_encipher_block.v 
+# -- Compiling module aes_encipher_block
+# 
+# Top level modules:
+# 	aes_encipher_block
+# End time: 13:58:06 on Oct 13,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/altera_lite/16.0/projects/aes_v1/verilog\ files {C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_decipher_block.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:58:06 on Oct 13,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/altera_lite/16.0/projects/aes_v1/verilog files" C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_decipher_block.v 
+# -- Compiling module aes_decipher_block
+# 
+# Top level modules:
+# 	aes_decipher_block
+# End time: 13:58:06 on Oct 13,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/altera_lite/16.0/projects/aes_v1/verilog\ files {C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_core.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:58:07 on Oct 13,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/altera_lite/16.0/projects/aes_v1/verilog files" C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_core.v 
+# -- Compiling module aes_core
+# 
+# Top level modules:
+# 	aes_core
+# End time: 13:58:07 on Oct 13,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 

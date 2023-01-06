@@ -1,0 +1,14 @@
+
+
+
+
+module Shift_Add3_algorithm(
+	input [3:0] in,
+	input [3:0] out
+	);
+	
+	always @(in) // describing an event that should happen to input when a certain condition is met
+	case (in)
+	4'b0000: out<=4b0000;
+	
+endmodule 

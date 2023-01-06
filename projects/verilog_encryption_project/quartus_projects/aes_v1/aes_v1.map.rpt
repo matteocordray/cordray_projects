@@ -1,0 +1,439 @@
+Analysis & Synthesis report for aes_v1
+Wed Oct 12 23:52:12 2022
+Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |aes_v1|aes_core:core|aes_core_ctrl_reg
+  9. State Machine - |aes_v1|aes_core:core|aes_key_mem:keymem|key_mem_ctrl_reg
+ 10. State Machine - |aes_v1|aes_core:core|aes_decipher_block:dec_block|dec_ctrl_reg
+ 11. State Machine - |aes_v1|aes_core:core|aes_encipher_block:enc_block|enc_ctrl_reg
+ 12. Registers Removed During Synthesis
+ 13. General Register Statistics
+ 14. Inverted Register Statistics
+ 15. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 16. Post-Synthesis Netlist Statistics for Top Partition
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Wed Oct 12 23:52:12 2022       ;
+; Quartus Prime Version           ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
+; Revision Name                   ; aes_v1                                      ;
+; Top-level Entity Name           ; aes_v1                                      ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 2994                                        ;
+; Total pins                      ; 76                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
+; Top-level entity name                                                           ; aes_v1             ; aes_v1             ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                       ; Off                ; Off                ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; PowerPlay Power Optimization During Synthesis                                   ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Synthesis Seed                                                                  ; 1                  ; 1                  ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                           ;
++------------------------------------+-----------------+------------------------+------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path   ; Used in Netlist ; File Type              ; File Name with Absolute Path                                           ; Library ;
++------------------------------------+-----------------+------------------------+------------------------------------------------------------------------+---------+
+; verilog files/aes_v1.v             ; yes             ; User Verilog HDL File  ; C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_v1.v             ;         ;
+; verilog files/aes_sbox.v           ; yes             ; User Verilog HDL File  ; C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_sbox.v           ;         ;
+; verilog files/aes_key_mem.v        ; yes             ; User Verilog HDL File  ; C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_key_mem.v        ;         ;
+; verilog files/aes_inv_sbox.v       ; yes             ; User Verilog HDL File  ; C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_inv_sbox.v       ;         ;
+; verilog files/aes_encipher_block.v ; yes             ; User Verilog HDL File  ; C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_encipher_block.v ;         ;
+; verilog files/aes_decipher_block.v ; yes             ; User Verilog HDL File  ; C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_decipher_block.v ;         ;
+; verilog files/aes_core.v           ; yes             ; User Verilog HDL File  ; C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_core.v           ;         ;
++------------------------------------+-----------------+------------------------+------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimate of Logic utilization (ALMs needed) ; 2580      ;
+;                                             ;           ;
+; Combinational ALUT usage for logic          ; 2943      ;
+;     -- 7 input functions                    ; 256       ;
+;     -- 6 input functions                    ; 1404      ;
+;     -- 5 input functions                    ; 535       ;
+;     -- 4 input functions                    ; 456       ;
+;     -- <=3 input functions                  ; 292       ;
+;                                             ;           ;
+; Dedicated logic registers                   ; 2994      ;
+;                                             ;           ;
+; I/O pins                                    ; 76        ;
+;                                             ;           ;
+; Total DSP Blocks                            ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 2994      ;
+; Total fan-out                               ; 28124     ;
+; Average fan-out                             ; 4.62      ;
++---------------------------------------------+-----------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                 ;
++---------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------+--------------------+--------------+
+; Compilation Hierarchy Node            ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                           ; Entity Name        ; Library Name ;
++---------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------+--------------------+--------------+
+; |aes_v1                               ; 2943 (97)         ; 2994 (518)   ; 0                 ; 0          ; 76   ; 0            ; |aes_v1                                                                       ; aes_v1             ; work         ;
+;    |aes_core:core|                    ; 2846 (78)         ; 2476 (5)     ; 0                 ; 0          ; 0    ; 0            ; |aes_v1|aes_core:core                                                         ; aes_core           ; work         ;
+;       |aes_decipher_block:dec_block|  ; 885 (725)         ; 139 (139)    ; 0                 ; 0          ; 0    ; 0            ; |aes_v1|aes_core:core|aes_decipher_block:dec_block                            ; aes_decipher_block ; work         ;
+;          |aes_inv_sbox:inv_sbox_inst| ; 160 (160)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |aes_v1|aes_core:core|aes_decipher_block:dec_block|aes_inv_sbox:inv_sbox_inst ; aes_inv_sbox       ; work         ;
+;       |aes_encipher_block:enc_block|  ; 394 (394)         ; 139 (139)    ; 0                 ; 0          ; 0    ; 0            ; |aes_v1|aes_core:core|aes_encipher_block:enc_block                            ; aes_encipher_block ; work         ;
+;       |aes_key_mem:keymem|            ; 1329 (1329)       ; 2193 (2193)  ; 0                 ; 0          ; 0    ; 0            ; |aes_v1|aes_core:core|aes_key_mem:keymem                                      ; aes_key_mem        ; work         ;
+;       |aes_sbox:sbox_inst|            ; 160 (160)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |aes_v1|aes_core:core|aes_sbox:sbox_inst                                      ; aes_sbox           ; work         ;
++---------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------+--------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------------------+
+; State Machine - |aes_v1|aes_core:core|aes_core_ctrl_reg                                                               ;
++-----------------------------+-----------------------------+-----------------------------+-----------------------------+
+; Name                        ; aes_core_ctrl_reg.CTRL_IDLE ; aes_core_ctrl_reg.CTRL_NEXT ; aes_core_ctrl_reg.CTRL_INIT ;
++-----------------------------+-----------------------------+-----------------------------+-----------------------------+
+; aes_core_ctrl_reg.CTRL_IDLE ; 0                           ; 0                           ; 0                           ;
+; aes_core_ctrl_reg.CTRL_INIT ; 1                           ; 0                           ; 1                           ;
+; aes_core_ctrl_reg.CTRL_NEXT ; 1                           ; 1                           ; 0                           ;
++-----------------------------+-----------------------------+-----------------------------+-----------------------------+
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |aes_v1|aes_core:core|aes_key_mem:keymem|key_mem_ctrl_reg                                                                              ;
++--------------------------------+----------------------------+--------------------------------+----------------------------+----------------------------+
+; Name                           ; key_mem_ctrl_reg.CTRL_DONE ; key_mem_ctrl_reg.CTRL_GENERATE ; key_mem_ctrl_reg.CTRL_INIT ; key_mem_ctrl_reg.CTRL_IDLE ;
++--------------------------------+----------------------------+--------------------------------+----------------------------+----------------------------+
+; key_mem_ctrl_reg.CTRL_IDLE     ; 0                          ; 0                              ; 0                          ; 0                          ;
+; key_mem_ctrl_reg.CTRL_INIT     ; 0                          ; 0                              ; 1                          ; 1                          ;
+; key_mem_ctrl_reg.CTRL_GENERATE ; 0                          ; 1                              ; 0                          ; 1                          ;
+; key_mem_ctrl_reg.CTRL_DONE     ; 1                          ; 0                              ; 0                          ; 1                          ;
++--------------------------------+----------------------------+--------------------------------+----------------------------+----------------------------+
+
+
+Encoding Type:  One-Hot
++----------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |aes_v1|aes_core:core|aes_decipher_block:dec_block|dec_ctrl_reg                                            ;
++------------------------+------------------------+------------------------+------------------------+------------------------+
+; Name                   ; dec_ctrl_reg.CTRL_MAIN ; dec_ctrl_reg.CTRL_SBOX ; dec_ctrl_reg.CTRL_INIT ; dec_ctrl_reg.CTRL_IDLE ;
++------------------------+------------------------+------------------------+------------------------+------------------------+
+; dec_ctrl_reg.CTRL_IDLE ; 0                      ; 0                      ; 0                      ; 0                      ;
+; dec_ctrl_reg.CTRL_INIT ; 0                      ; 0                      ; 1                      ; 1                      ;
+; dec_ctrl_reg.CTRL_SBOX ; 0                      ; 1                      ; 0                      ; 1                      ;
+; dec_ctrl_reg.CTRL_MAIN ; 1                      ; 0                      ; 0                      ; 1                      ;
++------------------------+------------------------+------------------------+------------------------+------------------------+
+
+
+Encoding Type:  One-Hot
++----------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |aes_v1|aes_core:core|aes_encipher_block:enc_block|enc_ctrl_reg                                            ;
++------------------------+------------------------+------------------------+------------------------+------------------------+
+; Name                   ; enc_ctrl_reg.CTRL_MAIN ; enc_ctrl_reg.CTRL_SBOX ; enc_ctrl_reg.CTRL_INIT ; enc_ctrl_reg.CTRL_IDLE ;
++------------------------+------------------------+------------------------+------------------------+------------------------+
+; enc_ctrl_reg.CTRL_IDLE ; 0                      ; 0                      ; 0                      ; 0                      ;
+; enc_ctrl_reg.CTRL_INIT ; 0                      ; 0                      ; 1                      ; 1                      ;
+; enc_ctrl_reg.CTRL_SBOX ; 0                      ; 1                      ; 0                      ; 1                      ;
+; enc_ctrl_reg.CTRL_MAIN ; 1                      ; 0                      ; 0                      ; 1                      ;
++------------------------+------------------------+------------------------+------------------------+------------------------+
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++-----------------------------------------------------------+--------------------+
+; Register name                                             ; Reason for Removal ;
++-----------------------------------------------------------+--------------------+
+; aes_core:core|aes_key_mem:keymem|key_mem_ctrl_reg~8       ; Lost fanout        ;
+; aes_core:core|aes_key_mem:keymem|key_mem_ctrl_reg~9       ; Lost fanout        ;
+; aes_core:core|aes_key_mem:keymem|key_mem_ctrl_reg~10      ; Lost fanout        ;
+; aes_core:core|aes_decipher_block:dec_block|dec_ctrl_reg~8 ; Lost fanout        ;
+; aes_core:core|aes_decipher_block:dec_block|dec_ctrl_reg~9 ; Lost fanout        ;
+; aes_core:core|aes_encipher_block:enc_block|enc_ctrl_reg~8 ; Lost fanout        ;
+; aes_core:core|aes_encipher_block:enc_block|enc_ctrl_reg~9 ; Lost fanout        ;
+; Total Number of Removed Registers = 7                     ;                    ;
++-----------------------------------------------------------+--------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 2994  ;
+; Number of registers using Synchronous Clear  ; 262   ;
+; Number of registers using Synchronous Load   ; 256   ;
+; Number of registers using Asynchronous Clear ; 2994  ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 2853  ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------+
+; Inverted Register Statistics                                   ;
++------------------------------------------------------+---------+
+; Inverted Register                                    ; Fan out ;
++------------------------------------------------------+---------+
+; aes_core:core|ready_reg                              ; 1       ;
+; aes_core:core|aes_encipher_block:enc_block|ready_reg ; 3       ;
+; aes_core:core|aes_decipher_block:dec_block|ready_reg ; 3       ;
+; Total number of inverted registers = 3               ;         ;
++------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |aes_v1|aes_core:core|aes_key_mem:keymem|round_ctr_reg[3]           ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |aes_v1|aes_core:core|aes_decipher_block:dec_block|sword_ctr_reg[0] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |aes_v1|aes_core:core|aes_encipher_block:enc_block|sword_ctr_reg[1] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |aes_v1|aes_core:core|aes_decipher_block:dec_block|round_ctr_reg[3] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |aes_v1|aes_core:core|aes_encipher_block:enc_block|round_ctr_reg[1] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |aes_v1|init_reg                                                    ;
+; 5:1                ; 127 bits  ; 381 LEs       ; 254 LEs              ; 127 LEs                ; Yes        ; |aes_v1|aes_core:core|aes_key_mem:keymem|prev_key1_reg[65]          ;
+; 5:1                ; 128 bits  ; 384 LEs       ; 0 LEs                ; 384 LEs                ; Yes        ; |aes_v1|aes_core:core|aes_key_mem:keymem|prev_key0_reg[5]           ;
+; 5:1                ; 128 bits  ; 384 LEs       ; 256 LEs              ; 128 LEs                ; Yes        ; |aes_v1|aes_core:core|aes_decipher_block:dec_block|block_w2_reg[16] ;
+; 5:1                ; 128 bits  ; 384 LEs       ; 256 LEs              ; 128 LEs                ; Yes        ; |aes_v1|aes_core:core|aes_encipher_block:enc_block|block_w1_reg[9]  ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |aes_v1|config_we                                                   ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |aes_v1|aes_core:core|aes_core_ctrl_reg                             ;
+; 5:1                ; 32 bits   ; 96 LEs        ; 96 LEs               ; 0 LEs                  ; No         ; |aes_v1|aes_core:core|aes_decipher_block:dec_block|tmp_sboxw[23]    ;
+; 5:1                ; 127 bits  ; 381 LEs       ; 254 LEs              ; 127 LEs                ; No         ; |aes_v1|aes_core:core|aes_key_mem:keymem|key_mem_new[58]            ;
+; 6:1                ; 32 bits   ; 128 LEs       ; 128 LEs              ; 0 LEs                  ; No         ; |aes_v1|aes_core:core|muxed_sboxw[17]                               ;
+; 15:1               ; 128 bits  ; 1280 LEs      ; 1280 LEs             ; 0 LEs                  ; No         ; |aes_v1|aes_core:core|aes_key_mem:keymem|Mux81                      ;
+; 7:1                ; 10 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |aes_v1|tmp_read_data                                               ;
+; 7:1                ; 18 bits   ; 72 LEs        ; 72 LEs               ; 0 LEs                  ; No         ; |aes_v1|tmp_read_data                                               ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |aes_v1|tmp_read_data                                               ;
+; 262:1              ; 2 bits    ; 348 LEs       ; 20 LEs               ; 328 LEs                ; No         ; |aes_v1|tmp_read_data                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 2994                        ;
+;     CLR               ; 13                          ;
+;     CLR SLD           ; 128                         ;
+;     ENA CLR           ; 2463                        ;
+;     ENA CLR SCLR      ; 262                         ;
+;     ENA CLR SLD       ; 128                         ;
+; arriav_lcell_comb     ; 2943                        ;
+;     extend            ; 256                         ;
+;         7 data inputs ; 256                         ;
+;     normal            ; 2687                        ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 182                         ;
+;         3 data inputs ; 109                         ;
+;         4 data inputs ; 456                         ;
+;         5 data inputs ; 535                         ;
+;         6 data inputs ; 1404                        ;
+; boundary_port         ; 76                          ;
+;                       ;                             ;
+; Max LUT depth         ; 7.00                        ;
+; Average LUT depth     ; 5.08                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:14     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+    Info: Processing started: Wed Oct 12 23:51:37 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off aes_v1 -c aes_v1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file verilog files/aes_v1.v
+    Info (12023): Found entity 1: aes_v1 File: C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_v1.v Line: 41
+Info (12021): Found 1 design units, including 1 entities, in source file verilog files/tb_aes_v1.v
+    Info (12023): Found entity 1: tb_aes_v1 File: C:/altera_lite/16.0/projects/aes_v1/verilog files/tb_aes_v1.v Line: 44
+Info (12021): Found 1 design units, including 1 entities, in source file verilog files/aes_sbox.v
+    Info (12023): Found entity 1: aes_sbox File: C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_sbox.v Line: 42
+Info (12021): Found 1 design units, including 1 entities, in source file verilog files/aes_key_mem.v
+    Info (12023): Found entity 1: aes_key_mem File: C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_key_mem.v Line: 41
+Info (12021): Found 1 design units, including 1 entities, in source file verilog files/aes_inv_sbox.v
+    Info (12023): Found entity 1: aes_inv_sbox File: C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_inv_sbox.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file verilog files/aes_encipher_block.v
+    Info (12023): Found entity 1: aes_encipher_block File: C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_encipher_block.v Line: 43
+Info (12021): Found 1 design units, including 1 entities, in source file verilog files/aes_decipher_block.v
+    Info (12023): Found entity 1: aes_decipher_block File: C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_decipher_block.v Line: 43
+Info (12021): Found 1 design units, including 1 entities, in source file verilog files/aes_core.v
+    Info (12023): Found entity 1: aes_core File: C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_core.v Line: 42
+Info (12127): Elaborating entity "aes_v1" for the top level hierarchy
+Info (12128): Elaborating entity "aes_core" for hierarchy "aes_core:core" File: C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_v1.v Line: 163
+Info (12128): Elaborating entity "aes_encipher_block" for hierarchy "aes_core:core|aes_encipher_block:enc_block" File: C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_core.v Line: 136
+Info (10264): Verilog HDL Case Statement information at aes_encipher_block.v(282): all case item expressions in this case statement are onehot File: C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_encipher_block.v Line: 282
+Info (12128): Elaborating entity "aes_decipher_block" for hierarchy "aes_core:core|aes_decipher_block:dec_block" File: C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_core.v Line: 152
+Info (10264): Verilog HDL Case Statement information at aes_decipher_block.v(320): all case item expressions in this case statement are onehot File: C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_decipher_block.v Line: 320
+Info (12128): Elaborating entity "aes_inv_sbox" for hierarchy "aes_core:core|aes_decipher_block:dec_block|aes_inv_sbox:inv_sbox_inst" File: C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_decipher_block.v Line: 237
+Info (12128): Elaborating entity "aes_key_mem" for hierarchy "aes_core:core|aes_key_mem:keymem" File: C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_core.v Line: 169
+Warning (10230): Verilog HDL assignment warning at aes_key_mem.v(382): truncated value with size 32 to match size of target (4) File: C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_key_mem.v Line: 382
+Warning (10230): Verilog HDL assignment warning at aes_key_mem.v(384): truncated value with size 32 to match size of target (4) File: C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_key_mem.v Line: 384
+Info (12128): Elaborating entity "aes_sbox" for hierarchy "aes_core:core|aes_sbox:sbox_inst" File: C:/altera_lite/16.0/projects/aes_v1/verilog files/aes_core.v Line: 172
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 7 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 5591 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 44 input pins
+    Info (21059): Implemented 32 output pins
+    Info (21061): Implemented 5515 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 5052 megabytes
+    Info: Processing ended: Wed Oct 12 23:52:12 2022
+    Info: Elapsed time: 00:00:35
+    Info: Total CPU time (on all processors): 00:00:45
+
+

@@ -1,0 +1,67 @@
+|hexToSevenSegment_test
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+SW[5] => SW[5].IN1
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
+HEX0[0] <= hexModule:hexToSevenSegment0.sevenSegmentActiveLow
+HEX0[1] <= hexModule:hexToSevenSegment0.sevenSegmentActiveLow
+HEX0[2] <= hexModule:hexToSevenSegment0.sevenSegmentActiveLow
+HEX0[3] <= hexModule:hexToSevenSegment0.sevenSegmentActiveLow
+HEX0[4] <= hexModule:hexToSevenSegment0.sevenSegmentActiveLow
+HEX0[5] <= hexModule:hexToSevenSegment0.sevenSegmentActiveLow
+HEX0[6] <= hexModule:hexToSevenSegment0.sevenSegmentActiveLow
+HEX1[0] <= hexModule:hexToSevenSegment1.sevenSegmentActiveLow
+HEX1[1] <= hexModule:hexToSevenSegment1.sevenSegmentActiveLow
+HEX1[2] <= hexModule:hexToSevenSegment1.sevenSegmentActiveLow
+HEX1[3] <= hexModule:hexToSevenSegment1.sevenSegmentActiveLow
+HEX1[4] <= hexModule:hexToSevenSegment1.sevenSegmentActiveLow
+HEX1[5] <= hexModule:hexToSevenSegment1.sevenSegmentActiveLow
+HEX1[6] <= hexModule:hexToSevenSegment1.sevenSegmentActiveLow
+
+
+|hexToSevenSegment_test|hexModule:hexToSevenSegment0
+hexNumber[0] => Decoder0.IN3
+hexNumber[1] => Decoder0.IN2
+hexNumber[2] => Decoder0.IN1
+hexNumber[3] => Decoder0.IN0
+sevenSegmentActiveLow[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+sevenSegmentActiveLow[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+sevenSegmentActiveLow[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+sevenSegmentActiveLow[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+sevenSegmentActiveLow[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+sevenSegmentActiveLow[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+sevenSegmentActiveLow[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+sevenSegmentActiveHigh[0] <= <GND>
+sevenSegmentActiveHigh[1] <= <GND>
+sevenSegmentActiveHigh[2] <= <GND>
+sevenSegmentActiveHigh[3] <= <GND>
+sevenSegmentActiveHigh[4] <= <GND>
+sevenSegmentActiveHigh[5] <= <GND>
+sevenSegmentActiveHigh[6] <= <GND>
+
+
+|hexToSevenSegment_test|hexModule:hexToSevenSegment1
+hexNumber[0] => Decoder0.IN3
+hexNumber[1] => Decoder0.IN2
+hexNumber[2] => Decoder0.IN1
+hexNumber[3] => Decoder0.IN0
+sevenSegmentActiveLow[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+sevenSegmentActiveLow[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+sevenSegmentActiveLow[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+sevenSegmentActiveLow[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+sevenSegmentActiveLow[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+sevenSegmentActiveLow[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+sevenSegmentActiveLow[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+sevenSegmentActiveHigh[0] <= <GND>
+sevenSegmentActiveHigh[1] <= <GND>
+sevenSegmentActiveHigh[2] <= <GND>
+sevenSegmentActiveHigh[3] <= <GND>
+sevenSegmentActiveHigh[4] <= <GND>
+sevenSegmentActiveHigh[5] <= <GND>
+sevenSegmentActiveHigh[6] <= <GND>
+
+

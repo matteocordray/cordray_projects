@@ -1,0 +1,19 @@
+// hextoSevenSegment_testCircuit
+
+module hexToSevenSegment_test
+(
+	// Inputs
+	input	wire[3:0] SW,
+	
+	// Outputs
+	output [6:0] HEX0, HEX1
+	
+);
+
+hex_module hexToSevenSegment0 (
+					.hexNumber(SW), .sevenSegmentActiveLow(HEX0));
+					
+hex_module hexToSevenSegment1 (
+					.hexNumber(SW), .sevenSegmentActiveHigh(HEX1));
+					
+endmodule

@@ -1,0 +1,97 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/altera_lite/16.0/projects/uart_v1/simulation/modelsim
+vDE1_SOC_golden_top
+Z1 !s110 1669701138
+!i10b 1
+!s100 ^_eiC>>b@@[J4:fCDPlb^2
+IQf>Fi6<WKU:HoOj1N31Y71
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1669700285
+8C:/altera_lite/16.0/projects/uart_v1/DE1_SOC_golden_top.v
+FC:/altera_lite/16.0/projects/uart_v1/DE1_SOC_golden_top.v
+L0 54
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1669701138.000000
+!s107 C:/altera_lite/16.0/projects/uart_v1/DE1_SOC_golden_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera_lite/16.0/projects/uart_v1|C:/altera_lite/16.0/projects/uart_v1/DE1_SOC_golden_top.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/altera_lite/16.0/projects/uart_v1
+Z7 tCvgOpt 0
+n@d@e1_@s@o@c_golden_top
+vuart_rx
+R1
+!i10b 1
+!s100 Ah3PDNAVR3iV[bLNb]^P80
+IUf9]0k@F284>WDGDVTlJK2
+R2
+R0
+w1666721499
+8C:/altera_lite/16.0/projects/uart_v1/uart_rx.v
+FC:/altera_lite/16.0/projects/uart_v1/uart_rx.v
+Z8 L0 14
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/altera_lite/16.0/projects/uart_v1/uart_rx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera_lite/16.0/projects/uart_v1|C:/altera_lite/16.0/projects/uart_v1/uart_rx.v|
+!i113 1
+R5
+R6
+R7
+vuart_tb
+!s110 1669701318
+!i10b 1
+!s100 Bn<BVdMOk]=fh<_>bN68e2
+IJ4X[o:;_hG_CTI[LO1UMY2
+R2
+R0
+w1669701289
+8C:/altera_lite/16.0/projects/uart_v1/uart_tb.v
+FC:/altera_lite/16.0/projects/uart_v1/uart_tb.v
+L0 8
+R3
+r1
+!s85 0
+31
+!s108 1669701318.000000
+!s107 C:/altera_lite/16.0/projects/uart_v1/uart_tb.v|
+!s90 -reportprogress|300|-work|work|C:/altera_lite/16.0/projects/uart_v1/uart_tb.v|
+!i113 1
+Z9 o-work work
+R7
+vuart_tx
+!s110 1669701162
+!i10b 1
+!s100 =5TZf@`VIO7gBjZ0kEeYK2
+I1_0f;TLGiVZJan=@78K9B0
+R2
+R0
+w1669700953
+8C:/altera_lite/16.0/projects/uart_v1/uart_tx.v
+FC:/altera_lite/16.0/projects/uart_v1/uart_tx.v
+R8
+R3
+r1
+!s85 0
+31
+!s108 1669701162.000000
+!s107 C:/altera_lite/16.0/projects/uart_v1/uart_tx.v|
+!s90 -reportprogress|300|-work|work|C:/altera_lite/16.0/projects/uart_v1/uart_tx.v|
+!i113 1
+R9
+R7

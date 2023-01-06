@@ -1,0 +1,9 @@
+|just_make_it_work
+sum <= xor_gate.DB_MAX_OUTPUT_PORT_TYPE
+x => xor_gate.IN0
+x => and_gate.IN0
+y => xor_gate.IN1
+y => and_gate.IN1
+carry <= and_gate.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,141 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/altera_lite/16.0/projects/uart_v2/simulation/modelsim
+vbaud_rate_gen
+Z1 !s110 1670439649
+!i10b 1
+!s100 `ThbS1S^g174`6`JPFC;S1
+IeZ[21lP6jP@0nEkVDJ>Lj3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1669701727
+8C:/altera_lite/16.0/projects/uart_v2/baud_rate_gen.v
+FC:/altera_lite/16.0/projects/uart_v2/baud_rate_gen.v
+L0 5
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1670439649.000000
+!s107 C:/altera_lite/16.0/projects/uart_v2/baud_rate_gen.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera_lite/16.0/projects/uart_v2|C:/altera_lite/16.0/projects/uart_v2/baud_rate_gen.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/altera_lite/16.0/projects/uart_v2
+Z7 tCvgOpt 0
+vDE1_SOC_golden_top
+!s110 1670439664
+!i10b 1
+!s100 AE<WahA8][?2ne:?>2lSJ0
+IA;Oh^CbI?Baz?Hz>Y[^U`1
+R2
+R0
+w1669708549
+8C:/altera_lite/16.0/projects/uart_v2/simulation/modelsim/uart_v2.vo
+FC:/altera_lite/16.0/projects/uart_v2/simulation/modelsim/uart_v2.vo
+L0 32
+R3
+r1
+!s85 0
+31
+!s108 1670439664.000000
+!s107 C:/altera_lite/16.0/projects/uart_v2/simulation/modelsim/uart_v2.vo|
+!s90 -reportprogress|300|-work|work|C:/altera_lite/16.0/projects/uart_v2/simulation/modelsim/uart_v2.vo|
+!i113 1
+Z8 o-work work
+R7
+n@d@e1_@s@o@c_golden_top
+vreceiver
+R1
+!i10b 1
+!s100 ALQVYgfIUF1XTaLznWQzJ2
+IOBS]_zJSMVeLiUiWS^2A22
+R2
+R0
+w1669701758
+8C:/altera_lite/16.0/projects/uart_v2/receiver.v
+FC:/altera_lite/16.0/projects/uart_v2/receiver.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/altera_lite/16.0/projects/uart_v2/receiver.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera_lite/16.0/projects/uart_v2|C:/altera_lite/16.0/projects/uart_v2/receiver.v|
+!i113 1
+R5
+R6
+R7
+vtransmitter
+R1
+!i10b 1
+!s100 VKeIlg;cVX8lhYCZo3PGn2
+I5B2_C::RHS0UO1_NUG^g<3
+R2
+R0
+w1669701778
+8C:/altera_lite/16.0/projects/uart_v2/transmitter.v
+FC:/altera_lite/16.0/projects/uart_v2/transmitter.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/altera_lite/16.0/projects/uart_v2/transmitter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera_lite/16.0/projects/uart_v2|C:/altera_lite/16.0/projects/uart_v2/transmitter.v|
+!i113 1
+R5
+R6
+R7
+vuart
+!s110 1670439648
+!i10b 1
+!s100 Y]z8n9YMn=9S>4HCd^]HQ2
+I84Xgd]nYZz1T32i<AOQ=S1
+R2
+R0
+w1669702297
+8C:/altera_lite/16.0/projects/uart_v2/uart_v2.v
+FC:/altera_lite/16.0/projects/uart_v2/uart_v2.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1670439648.000000
+!s107 C:/altera_lite/16.0/projects/uart_v2/uart_v2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera_lite/16.0/projects/uart_v2|C:/altera_lite/16.0/projects/uart_v2/uart_v2.v|
+!i113 1
+R5
+R6
+R7
+vuart_tx_test
+!s110 1670439734
+!i10b 1
+!s100 _ANFDJnSf@HPORM]CB63]2
+IciQUaTFQB:gab=fF8@bSz0
+R2
+R0
+w1669750325
+8C:/altera_lite/16.0/projects/uart_v2/testbench/testbench.v
+FC:/altera_lite/16.0/projects/uart_v2/testbench/testbench.v
+L0 7
+R3
+r1
+!s85 0
+31
+!s108 1670439734.000000
+!s107 C:/altera_lite/16.0/projects/uart_v2/testbench/testbench.v|
+!s90 -reportprogress|300|-work|work|C:/altera_lite/16.0/projects/uart_v2/testbench/testbench.v|
+!i113 1
+R8
+R7

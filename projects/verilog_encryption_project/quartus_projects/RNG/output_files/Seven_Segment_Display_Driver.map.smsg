@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at slow_clock.v(12): always construct contains both blocking and non-blocking assignments File: C:/altera_lite/16.0/projects/RNG/verilog_files/binary_bcd_converter/slow_clock.v Line: 12
