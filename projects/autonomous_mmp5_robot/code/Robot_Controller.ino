@@ -405,7 +405,7 @@ void searchForObjective(){
     shootEnemy();
   } else {
 
-    shootEnemy();
+    shootEnemy(); // this works for the boss, since the boss will be the last objective of the course...
     
   }
 }
