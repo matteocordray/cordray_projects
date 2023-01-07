@@ -1,6 +1,6 @@
 # Sprinter Van Control System Project
 
-In January of 2021, I was home and I was curiously looking at sprinter vans in the Dallas area, just to see what the average price would be after seeing very modern ones on YouTube costing upwards of $100k. Most sprinter vans I saw had old control systems, particularly a company located in Dallas called Iconic Sprinter Vans, and I believed that I could design a control system that was more modern and user friendly. So, I decided to embark on the journey of designing a "mock-up" for a sprinter van. I had a genuine interest in seeing how close I could get to making something without knowing anything about the van. This README details the progress so far, as I've invested a good amount of time and money on the project and as of December 2022, I have a decently working prototype that I'm content with as I move on to other projects (and focus on finishing my senior year at WP).
+In January of 2021, I was home and I was curiously looking at sprinter vans in the Dallas area, just to see what the average price would be after seeing very modern ones on YouTube costing upwards of $100k. Most sprinter vans I saw had old control systems, particularly a company located in Dallas called Iconic Sprinter Vans, and I believed that these systems deserve a more friendly and modern user interface. So, I decided to embark on the journey of designing a "mock-up" for a sprinter van. I had a genuine interest in seeing how close I could get to making something without knowing anything about the van. This README details the progress so far, as I've invested a good amount of time and money on the project and as of December 2022, I have a decently working prototype that I'm content with as I move on to other projects (and focus on finishing my senior year at WP at the time of writing).
 
 ## Project Overview
 This project overview details the different versions I've gone through, including the hardware, software, and other problems I've encountered and how I've handled them accordingly.
@@ -10,14 +10,13 @@ This project overview details the different versions I've gone through, includin
   - [Version 0.2](#version-02)
   - [Version 0.1](#version-01)
 
-## **NOTE: All logos for Iconic © Sprinter Vans are owned by Iconic © Sprinter Vans and are not owned by me. I am using them for educational purposes only.**
+## **NOTE: All logos for Iconic © Sprinter Vans are owned by Iconic © Sprinter Vans and are not owned by me. I am using them for educational purposes only and for mock-ups.**
 
 ## *Version 0.3*
 
 This version started after I wanted to move from the original van design to a more robust and manufacturable design. I designed a PCB that would house the same board I made for version 2, with some exceptions: 
 1. Instead of individual blind modules, I am using a 12-relay board I bought on Amazon. To connect to it, I am using a 20-pin molex connector to bridge between my custom board and the relay board.
 2. The main board previously should be converted to a single PCB that can be manufactured.
-
 
 
 Here is a 3D view of version 1.3.2 of the board. A mistake was made and it should be 0.3.2:
@@ -34,8 +33,9 @@ This board performed surprisingly well in the few tests that were done. I tested
    <img src="docs/images/sprinter-van/iconic_board_testing_main_lights.JPG" width="700" />
 </p>
 
-I simply checked to see how the LED responded to changes in the input (coming straight from the capacitive touch panel). I had to crack open the capacitive touch panel to see if I could get a PWM signal out of it since the signal coming from the open connections was 12V (and I needed 5V signal levels). Sure, could I have just used a voltage divider? Or a level-shifter? Perhaps, but soldering a wire to the base of the power transistor inside was much easier, and worked well. I don't have any pictures of the PWM signal coming out (There was little to no overshoot on the signal and the duty cycle changed rather quickly to responding input). There needed to be two inputs to the ESP32. One was a callback from a serial BT connection, and the other was 
+I simply checked to see how the LED responded to changes in the input (coming straight from the capacitive touch panel). I had to crack open the capacitive touch panel to see if I could get a PWM signal out of it since the signal coming from the open connections was 12V (and I needed 5V signal levels). Sure, could I have just used a voltage divider? Or a level-shifter? Perhaps, but soldering a wire to the base of the power transistor inside was much easier, and worked well. I don't have any pictures of the PWM signal coming out (There was little to no overshoot on the signal and the duty cycle changed rather quickly to responding input). There needed to be two inputs to the ESP32. One was a callback from a serial BT connection, and the other was for the physical connections that entered into the board from the capactive touch panel. 
 
+Overall, this version was a success and this is the last version of the board I intend to build, since I plan on moving onto other projects and focus my efforts elsewhere.
 
 ## *Version 0.2*
 Our direction and motivation changed from the version 0.1 prototype. I changed the Nextion Display to instead use an Android Head Unit as the main controller. Initially, my goals were to:
@@ -56,7 +56,7 @@ Simultaneously, I was working on a board that contained female headers for an ES
 
 The boards had tons of mistakes I made (flipped connections, missing 5V on reset pins for GPIO expander, missing external connectors). But, overall, it could have worked for a "demo" run after some modifications (you can see the botched wires on the PCB above).
 
-***Shortly after,*** I then realized that it wouldn't be too easy to completely implement the system from scratch on a van, so what if it would be cheaper for any sprinter van company to just retrofit and coexist whatever system they already have with the ESP32 control board I built? Due to time and money already spent on the project, I had to make some interesting decisions with the available parts I had. Instead of potentially slapping on another MCU to handle multiple inputs, I instead added some OR gate chips from TI that were in the lab, which would allow either the ESP32 output signals or the output signals from the buttons/switches presumably already in the van to turn on/off whatever it is controlling, to the board. That required transitioning the existing switches/buttons in the van to run off of the *same voltage as the ESP32* and lots of changes to the code. Since I was scared to order another PCB again with too many mistakes, I wanted to first verify this thing would work and I decided to just buy a double-sided perfboard and wire everything myself:
+***Shortly after,*** I then realized that it wouldn't be too easy to completely implement the system from scratch on a van, so what if it would be cheaper for any sprinter van company to just retrofit and coexist whatever system they already have with the ESP32 control board I built? Due to time and money already spent on the project, I had to make some interesting decisions with the available parts I had. Instead of potentially slapping on another MCU to handle multiple inputs, I instead added some OR gate chips from TI that were in the lab, which would allow either the ESP32 output signals or the output signals from the buttons/switches presumably already in the van to turn on/off whatever it is controlling, to the board. In retrospect, sure, I could have used a multiplexer of some sorts, but I made this decision early and decided to stick with it since I knew it would work. That required transitioning the existing switches/buttons in the van to run off of the *same voltage as the ESP32* and lots of changes to the code. Since I was scared to order another PCB again with too many mistakes, I wanted to first verify this thing would work and I decided to just buy a double-sided perfboard and wire everything myself:
 <p align="center">Top View</p>
 <p align="center">
    <img src="docs/images/sprinter-van/iconic_board_v2_top_perfboard.jpg" width="700" />
