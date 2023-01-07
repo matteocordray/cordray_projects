@@ -42,3 +42,10 @@ The `1'b1` is a 1-bit constant, and holds the value that comes after the `b`, wh
 If the `rst` button is pushed, the clock will *reset* and the counter will start from 0. Otherwise, the counter will *shift* (that is what the `<=` operator does) and increment by 1 (hence the `1b'1`).
 
 This simple but effective application shows the basics when it comes to verilog, and implementing a counter in verilog seemed like a good first step towards understanding the entirety of the application. For information on uploading the DE-1 SOC board, go to the [FPGA Designs with Verilog and SystemVerilog Website](https://verilogguide.readthedocs.io/en/latest/verilog/firstproject.html) to find out specifics on using Quartus Prime and the associated programmer.
+
+Below is a GIF of the counter in action:
+
+<p align="center">
+   <img src="images/4_bit_counter_demo.gif" width="400" />
+   <p align="center"> Figure 1. <i>The 4-bit counter</i></p>
+</p>

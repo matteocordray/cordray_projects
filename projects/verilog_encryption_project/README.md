@@ -1,5 +1,9 @@
 # FPGA Learning Journey - Implementing Encryption Standards
 # Verilog Encryption Project
+## WORK IN PROGRESS
+**NOTE: This project is still a work in progress. Please refer to the `docs` folder to find the latest presentation material for the project.**
+
+## Introduction
 This project serves to outline my journey in learning verilog and implementing an encryption standard, such as AES, on an FPGA.
 
 The larger scope of this project is an extension of an Independent Study being conducted at the United States Military Academy, extending the field of open source chip design with Google's efabless project. However, before building and designing a chip, a large part of the time will be spent learning verilog and learning the AES encryption standard. If time allows, other encryption standards will be implemented, such as Twofish and Serpent.
